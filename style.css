@@ -632,4 +632,22 @@ footer>p{
     cursor:pointer;
   }
 
+}/* Premium Product Cards */
+
+.card{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow:hidden;
+}
+
+.card img{
+  transition: transform 0.4s ease;
+}
+
+.card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.card:hover img{
+  transform: scale(1.05);
 }
