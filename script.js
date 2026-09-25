@@ -2,7 +2,24 @@ const form = document.getElementById("contactForm");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Thank you! Your message has been received.");
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  const whatsappMessage =
+    `Hello The Jagi,%0A%0A` +
+    `Name: ${name}%0A` +
+    `Email: ${email}%0A` +
+    `Subject: ${subject}%0A` +
+    `Message: ${message}`;
+
+  window.open(
+    `https://wa.me/916307152108?text=${whatsappMessage}`,
+    "_blank"
+  );
+
   form.reset();
 });
 
