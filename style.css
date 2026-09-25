@@ -673,4 +673,29 @@ footer>p{
 
 .card a:hover{
   color:#111;
+}.whatsapp-btn,
+.call-btn{
+  display:inline-block;
+  padding:12px 20px;
+  margin:10px 8px 0 0;
+  border-radius:4px;
+  text-decoration:none;
+  font-weight:bold;
+  transition:all 0.3s ease;
+}
+
+.whatsapp-btn{
+  background:#25D366;
+  color:#fff;
+}
+
+.call-btn{
+  background:#e7bd4d;
+  color:#071010;
+}
+
+.whatsapp-btn:hover,
+.call-btn:hover{
+  transform:translateY(-3px);
+  opacity:0.9;
 }
