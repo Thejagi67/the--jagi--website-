@@ -8,4 +8,10 @@ const nav = document.querySelector(".site-header nav");
 
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("open");
+});const navLinks = document.querySelectorAll(".site-header nav a");
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("open");
+  });
 });
