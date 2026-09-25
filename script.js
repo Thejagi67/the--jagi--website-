@@ -15,7 +15,7 @@ menuButton.addEventListener("click", () => {
     menuButton.textContent = "☰";
   }
 });
-});const navLinks = document.querySelectorAll(".site-header nav a");
+const navLinks = document.querySelectorAll(".site-header nav a");
 
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
