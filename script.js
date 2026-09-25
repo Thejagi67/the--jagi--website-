@@ -8,6 +8,13 @@ const nav = document.querySelector(".site-header nav");
 
 menuButton.addEventListener("click", () => {
   nav.classList.toggle("open");
+
+  if (nav.classList.contains("open")) {
+    menuButton.textContent = "✕";
+  } else {
+    menuButton.textContent = "☰";
+  }
+});
 });const navLinks = document.querySelectorAll(".site-header nav a");
 
 navLinks.forEach(link => {
