@@ -1,9 +1,12 @@
-const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert('Thank you! Your message has been received.');
+  alert("Thank you! Your message has been received.");
   form.reset();
-});const menuButton = document.querySelector(".menu");
+});
+
+const menuButton = document.querySelector(".menu");
 const nav = document.querySelector(".site-header nav");
 
 menuButton.addEventListener("click", () => {
@@ -15,10 +18,12 @@ menuButton.addEventListener("click", () => {
     menuButton.textContent = "☰";
   }
 });
+
 const navLinks = document.querySelectorAll(".site-header nav a");
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     nav.classList.remove("open");
+    menuButton.textContent = "☰";
   });
 });
