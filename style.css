@@ -97,6 +97,7 @@ body{
   height:100%;
   object-fit:cover;
   object-position:center;
+  display:black;
 }
 
 .hero-overlay{
@@ -743,5 +744,13 @@ footer>p{
   .eyebrow {
     font-size: 10px;
     letter-spacing: 2px;
+  }
+}@media (max-width:768px){
+  .hero{
+    height:620px;
+  }
+
+  .hero-photo{
+    object-position:center;
   }
 }
